@@ -1,3 +1,58 @@
+
+### Note 
+
+
+I deployed it on backend on render and frontend on netlify.
+
+depoyed link: https://blogappdaveed.netlify.app/ 
+
+backend deplyed link: https://blogbackend-3hud.onrender.com 
+
+backend repository: https://github.com/DaveedGangi/blogbackend.git 
+
+
+I have used a third party packages 
+
+I have added a responsiveness to different screen sizes 
+
+i have written a clean code guiddelinse 
+
+i have used this commands for frontend 
+
+Installation Command:
+
+npm install -g create-react-app
+
+
+Creating a React Application
+
+create-react-app myapp --use-npm
+
+
+Starting a React Application
+
+npm start
+
+
+npm i react-router-dom@5.2.0
+
+npm i js-cookie
+
+npm install react-bootstrap bootstrap
+
+npm install lottie-react
+
+npm i react-icons
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
