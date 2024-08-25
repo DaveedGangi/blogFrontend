@@ -1,0 +1,78 @@
+
+
+.form-add-post{
+    height:clamp(300px, 50vh, 500px);
+    width:400px;
+    color: white;
+    backdrop-filter:blur(10px);
+    background-color:(255, 255, 255, 0);
+    padding:22px;
+    margin-bottom:clamp(99px, 77px, 80px);
+    border:1px solid rgb(111, 175, 196);
+    border-radius:12px;
+ 
+
+}
+
+.bg-for-post-add{
+    background-image:url("https://images.pexels.com/photos/14399824/pexels-photo-14399824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: 100% 100%;
+    background-size:cover;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    
+
+}
+
+.add-post-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.button-for-add-post{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 12px 2px;
+    cursor: pointer;
+   
+    border-radius:12px;
+}
+
+.button-for-add-post:hover{
+    background-color: rgba(151, 178, 222, 0.8);
+}
+
+.home-link{
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+    .bg-for-post-add{
+     background-image:url("https://images.pexels.com/photos/15778609/pexels-photo-15778609/free-photo-of-flock-of-birds-in-purple-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+
+
+    }
+    .home-link{
+        font-size: 23px;
+    }
+    .form-add-post{
+        width:300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    
+
+
+}

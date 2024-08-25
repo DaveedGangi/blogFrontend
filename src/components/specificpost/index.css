@@ -1,0 +1,106 @@
+
+
+.post-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.date-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-info-container{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin:13px;
+    padding:12px;
+}
+
+.comment-show{
+    display:block;
+}
+.comment-hide{
+    display:none;
+}
+
+.comment-show-hide-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-input-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.comment-container{
+
+    background-color: rgb(250, 250, 250);
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    
+}
+
+.description{
+    color:rgb(37, 65, 65);
+}
+
+.show-and-hide-comment-button{
+   background-color: rgb(102, 82, 60);
+    border:none;
+    color:rgb(188, 215, 215);
+    font-size:20px;
+    cursor: pointer;
+    padding:10px;
+    border-radius:10px;
+    
+}
+.show-and-hide-comment-button:hover{
+    color:rgb(10, 10, 10);
+}
+
+.add-comment-button-for-post{
+    background-color: rgb(66, 107, 220);
+    border:none;
+
+    color:rgb(229, 236, 236);
+    font-size:20px;
+    cursor: pointer;
+    padding:10px;
+    border-radius:10px;
+}
+.add-comment-button-for-post:hover{
+    color:rgb(10, 10, 10);
+}
+.delete-comment-button{
+    background-color: rgb(220, 66, 66);
+    border:none;
+    color:rgb(229, 236, 236);
+    font-size:20px;
+    cursor: pointer;
+    padding:10px;
+    border-radius:10px;
+}
+.delete-comment-button:hover{
+    color:rgb(10, 10, 10);
+}
+
+.comment-text{
+    color:rgb(14, 1, 7);
+    
+    
+}
+
+.posted-by{
+    color:rgb(129, 0, 60);
+}

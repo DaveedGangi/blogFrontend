@@ -1,0 +1,117 @@
+
+
+.my-post-image{
+    height:clamp(200px, 400px, 500px);
+    width:clamp(200px, 400px, 500px);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.my-posts-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.home-button{
+   background-color: #007BFF;
+    color: white;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.home-button:hover{
+    background-color: #0056b3;
+}
+
+.log-out-button{
+    background-color: #007BFF;
+    color: white;
+    border:0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.log-out-button:hover{
+    background-color: #0056b3;
+}
+
+.user-full-name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+.view-post-button{
+    background-color: #052242;
+    color: white;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin:10px;
+}
+.view-post-button:hover{
+    background-color: #77a2d0;
+}
+.edit-post-button{
+    background-color: #007BFF;
+    color: white;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin:10px;
+}
+.edit-post-button:hover{
+    background-color: #0f36b6;
+}
+.delete-post-button{
+    background-color: #f3490b;
+    color: white;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin:10px;
+}
+.delete-post-button:hover{
+    background-color: #9b1807;
+}
+
+.buttons-edit-view-delete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.my-posts{
+    margin:22px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding:22px;
+    border-radius: 5px;
+}
+@media (max-width:767px){
+
+    .my-post-image{
+        width:300px;
+    }
+    .buttons-edit-view-delete{
+        flex-direction: column;
+    }
+}

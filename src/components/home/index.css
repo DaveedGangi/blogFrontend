@@ -1,0 +1,102 @@
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d5e4a0;
+    padding:12px;
+    height:77px;
+    margin-bottom:12px;
+}
+
+.user-name{
+    height:44px;
+    width:44px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:blueviolet;
+    font-size: 26px;
+    font-weight:600;
+}
+
+.profile{
+    text-decoration: none;
+}
+
+.profile:hover{
+    color: darkblue;
+}
+
+.posts-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    
+}
+
+.posts{
+    margin:33px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width:300px;
+
+}
+
+.add-new-post-button{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.add-new-post-button:hover{
+    background-color: #0056b3;
+}
+
+.info-posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.home-container{
+   padding:12px;
+   color:rgb(198, 93, 93);
+   
+}
+.loader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    width: 100%;
+}
+@media (max-width:767px){
+
+    .user-name{
+        height:33px;
+        width:33px;
+        font-size:18px;
+    }
+}
+

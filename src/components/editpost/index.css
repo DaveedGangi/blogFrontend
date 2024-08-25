@@ -1,0 +1,74 @@
+
+
+.bg-for-post-edit{
+    background-image:url("https://images.pexels.com/photos/26045508/pexels-photo-26045508/free-photo-of-undersea-view-of-a-pod-of-dolphins.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size:cover;
+    object-fit: cover;
+    background-position:100%,100%;
+    background-repeat: no-repeat;
+ 
+   
+    margin:0px;
+    
+    padding-bottom: 99px;
+}
+
+.form-edit-post{
+    
+    width:500px;
+    color: white;
+    backdrop-filter:blur(10px);
+    background-color:(255, 255, 255, 0);
+    padding:22px;
+    margin-bottom:clamp(99px, 77px, 80px);
+    border:1px solid rgb(111, 175, 196);
+    border-radius:12px;
+  
+
+ 
+
+
+}
+
+.form-container-for-edit-post{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+   
+}
+
+.button-update{
+    background-color: rgb(102, 82, 60);
+    border:0px;
+    color:rgb(188, 215, 215);
+    font-size:20px;
+    cursor: pointer;
+    padding:10px;
+    border-radius:10px;
+}
+.input{
+    width:400px;
+    border-radius:10px;
+    border:1px solid rgb(111, 175, 196);
+    margin-bottom:10px;
+    
+   
+}
+
+@media (max-width:767px){
+
+    .bg-for-post-edit{
+        background-image:url("https://images.pexels.com/photos/17823429/pexels-photo-17823429/free-photo-of-undersea-view-of-dolphins-swimming-past-a-female-diver.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        background-size:cover;
+    }
+    .input{
+        width:288px;
+    }
+    .form-edit-post{
+        width:300px;
+        margin-top:77px;
+       
+    }
+  
+}
