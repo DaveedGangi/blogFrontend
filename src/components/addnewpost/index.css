@@ -1,4 +1,10 @@
 
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .form-add-post{
     height:clamp(300px, 50vh, 500px);
@@ -53,6 +59,13 @@
 
 .home-link{
     text-decoration: none;
+}
+
+.add-nav-bar-text{
+    font-size:19px;
+    color: #333;
+    font-family: 'Roboto';
+    
 }
 
 @media (max-width: 767px) {

@@ -59,7 +59,7 @@ class AddNewPost extends Component {
                     <h1>
                         <Link className="home-link" to="/">Home</Link>
                     </h1>
-                    <p>Add your favourite post</p>
+                    <h3 className="add-nav-bar-text">Add your favourite post</h3>
                     <Link className="profile" to="/profile"><span className="user-name">{user.username[0]}</span></Link>
                 </div>
 

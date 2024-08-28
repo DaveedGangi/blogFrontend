@@ -9,6 +9,8 @@
     padding:12px;
     height:77px;
     margin-bottom:12px;
+   
+    box-sizing: border-box;
 }
 
 .user-name{
@@ -39,6 +41,7 @@
     align-items: center;
     margin-top: 15px;
     flex-wrap: wrap;
+   
     
 }
 
@@ -81,6 +84,10 @@
 .home-container{
    padding:12px;
    color:rgb(198, 93, 93);
+   padding-top:55px;
+   font-size:18px;
+   font-family: "Roboto";
+
    
 }
 .loader{
@@ -91,6 +98,56 @@
     height: 88vh;
     width: 100%;
 }
+
+.empty-posts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    font-family: 'Roboto';
+    
+  
+}
+Lottie{
+    height:300px;
+    width:300px
+}
+.welcome-blog-heading{
+    font-size:19px;
+   
+    color: #333;
+    font-family: 'Roboto';
+
+}
+.loading-text{
+    color:#0056b3;
+    font-family: "Roboto";
+}
+
+.search-input-text{
+    width:300px;
+    padding:10px;
+    border-radius: 5px;
+    border:0.34px solid rgb(180, 140, 140);
+}
+.input-search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.blog-heading-for-navbar{
+    font-size:18px;
+    font-weight:600;
+    color: #333;
+    font-family: 'Roboto';
+}
 @media (max-width:767px){
 
     .user-name{
@@ -98,5 +155,6 @@
         width:33px;
         font-size:18px;
     }
+    
 }
 

@@ -83,6 +83,14 @@ class Profile extends Component {
         const {myposts}=this.state
 
         return(
+            <div>
+                <div className="no-posts-found-container">
+                {
+                myposts.length===0&&<h1>No Posts Found
+                    <img className="profile-no-posts-found" src="https://cdni.iconscout.com/illustration/premium/thumb/world-business-vision-9772498-8049394.png" alt="no-posts"/>
+                </h1>
+            }
+            </div>
             <div className="my-posts-container">
             { 
                 myposts.map(post => (
@@ -107,6 +115,7 @@ class Profile extends Component {
                     </div>
                 ))
             }
+            </div>
 
             </div>
 
@@ -156,7 +165,7 @@ wrapperClass="dna-wrapper"
         const { myposts } = this.state;
         return (
             <div>
-                 <div className="navbar">
+                     <div className="navbar">
                     <div>
                     <Link to="/">
                      <button className='home-button' type="button">Home</button>
@@ -164,7 +173,7 @@ wrapperClass="dna-wrapper"
 
 
                     </div>
-                    <p>Profile Page</p>
+                    <h3 className="profile-navbar-text">Profile Page</h3>
 
                     <div>     
                      <button className="log-out-button" type="button" onClick={this.removeJwtToken}>Log Out</button>
@@ -172,14 +181,15 @@ wrapperClass="dna-wrapper"
 
                      </div>
                
-
+                <div className="profile-container">
                 <p>You are logged in as <span className="user-full-name">{user.username} </span></p>
 
-            <br/>
+                <br/>
            
 
             <h2>My Posts: {myposts.length}</h2>
             <hr/>
+            
 
 
           
@@ -189,6 +199,9 @@ wrapperClass="dna-wrapper"
             
 
             <p>Thank you for visiting our blog!</p>
+
+
+            </div>
 
             </div>
         )

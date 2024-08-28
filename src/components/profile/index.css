@@ -51,7 +51,7 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #333;
+    color: #ce9494;
 }
 .view-post-button{
     background-color: #052242;
@@ -106,6 +106,48 @@
     padding:22px;
     border-radius: 5px;
 }
+
+.profile-container{
+    padding:22px;
+    color:#71654e;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.profile-no-posts-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    font-family: 'Roboto';
+}
+.no-posts-found-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    color: #333;
+    font-family: 'Roboto';
+    text-align: center;
+    margin:33px;
+}
+
+.profile-navbar-text{
+  
+   
+    color: #333;
+    font-family: 'Roboto';
+    text-align: center;
+    margin:33px;
+}
 @media (max-width:767px){
 
     .my-post-image{
@@ -113,5 +155,19 @@
     }
     .buttons-edit-view-delete{
         flex-direction: column;
+    }
+    .profile-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .no-posts-found-container{
+        font-size:15px;
+        font-weight: 500;
+    }
+    .profile-no-posts-found{
+        height:40vh;
+        
     }
 }

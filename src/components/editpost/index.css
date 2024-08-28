@@ -15,7 +15,7 @@
 
 .form-edit-post{
     
-    width:500px;
+    width:410px;
     color: white;
     backdrop-filter:blur(10px);
     background-color:(255, 255, 255, 0);
@@ -23,6 +23,7 @@
     margin-bottom:clamp(99px, 77px, 80px);
     border:1px solid rgb(111, 175, 196);
     border-radius:12px;
+    
   
 
  
@@ -54,6 +55,23 @@
     margin-bottom:10px;
     
    
+}
+
+.navbar-edit-your-post-text{
+    font-size:25px;
+    color:white;
+    margin-bottom:30px;
+}
+
+.loader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(198, 190, 116);
+    width:100%;
+    font-size:12px;
+    font-weight: 500;
 }
 
 @media (max-width:767px){

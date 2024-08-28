@@ -4,10 +4,16 @@ import {Component} from "react";
 import {Link} from "react-router-dom";
 
 import Cookies from "js-cookie"
+
 import {DNA} from "react-loader-spinner"
+
+import Lottie from 'react-lottie';
+
 
 
 import "./index.css"
+
+import animation from '../animate/animation.json'
 
 const condition={
 
@@ -21,7 +27,7 @@ const condition={
 
 class Home extends Component {
 
-    state={posts:[],status:condition.isPending}
+    state={posts:[],status:condition.isPending,searchText:""}
 
     componentDidMount(){
         this.getPosts();
@@ -29,6 +35,7 @@ class Home extends Component {
     
     getPosts = async () => {
         this.setState({status:condition.isPending})
+        const {searchText} = this.state;
 
         const url="https://blogbackend-3hud.onrender.com/posts";
         const jwtToken=Cookies.get("jwtTokenBlog")
@@ -41,8 +48,10 @@ class Home extends Component {
 
             const response = await fetch(url,options);
             const data = await response.json();
+            const filteredData=data.filter((each)=>each.title.toLowerCase().includes(searchText.toLowerCase()))
+            console.log(filteredData)
             if(response.ok) {
-                this.setState({posts: data,status:condition.isSuccess});
+                this.setState({posts: filteredData,status:condition.isSuccess});
                 console.log("Successfully fetched posts");
             }
             else{
@@ -51,13 +60,30 @@ class Home extends Component {
             }
         }
 
+
+    inputSearchText=(e)=>{
+        this.setState({searchText:e.target.value},()=>{
+            this.getPosts()
+        })
+    }
+
 blogList=()=>{
     const {posts}=this.state
+    const defaultOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: animation,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        }
+    }
     return(
         <div className="home-container">
 
         <p>You can create new posts, edit existing posts, and delete posts.</p>
         <p>You can also view other users' posts and leave comments.</p>
+        
+        <hr/>
         
         <div className="info-posts">
             <div>
@@ -70,7 +96,16 @@ blogList=()=>{
         </div>
 
     <br/>
-    <div className="posts-container">
+  
+        {
+            posts.length===0?
+            <div className="empty-posts"><div> <Lottie className="Lottie" 
+            options={defaultOptions}
+        
+        />
+           </div>
+           <p>Please add a post</p></div>
+        :<div className="posts-container">
         {
             posts.map((post) => (
                 <div className="posts" key={post.id}>
@@ -81,7 +116,9 @@ blogList=()=>{
                 </div>
             ))
         }
+    
     </div>
+}
 
         </div>
 
@@ -101,7 +138,7 @@ ariaLabel="dna-loading"
 wrapperStyle={{}}
 wrapperClass="dna-wrapper"
 />
-<h1>Loading...</h1>
+<h1 className="loading-text">Loading...</h1>
 </div>
     </div>
 )
@@ -135,9 +172,16 @@ wrapperClass="dna-wrapper"
         return (
             <div>
                 <div className="navbar">
-                    <h1>Blog</h1>
-                    <p>Welcome to Blog App</p>
+                    <h1 className="blog-heading-for-navbar">Blog</h1>
+                    <h3 className="welcome-blog-heading">Welcome to Blog App</h3>
                     <Link className="profile" to="/profile"><span className="user-name">{user.username[0]}</span></Link>
+                </div>
+
+
+                <div className="input-search-container">
+                 <div>
+                <input onChange={this.inputSearchText} className="search-input-text" type="search" placeholder="search for posts here..."/>
+                </div>
                 </div>
 
               

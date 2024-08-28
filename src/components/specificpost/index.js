@@ -137,6 +137,8 @@ class Post extends Component {
 
  specificPost=()=>{
     const {post,comments,commentShow,comment} = this.state;
+    const user=JSON.parse(localStorage.getItem("user"));
+    console.log("user",user)
     return(
         <div className="post-info-container">
         <div className="date-time">
@@ -189,10 +191,20 @@ class Post extends Component {
                         </div>
                         <p className="comment-text">{comment.content}</p>
                         <p>Commented by: {comment.username}</p>
+                          
 
+                     {user.username===comment.username&&
                         <div>
                             <button className="delete-comment-button" type="button" onClick={()=>this.deleteComment(comment.id)}>Delete</button>
                         </div>
+                       }
+
+
+
+
+
+
+
                     </div>
                 )
             })
@@ -261,7 +273,7 @@ wrapperClass="dna-wrapper"
                     <h1>
                         <Link className="home-link" to="/">Home</Link>
                     </h1>
-                    <p>Post info</p>
+                    <h3 className="navbar-post-info-text">Post info</h3>
                     <Link className="profile" to="/profile"><span className="user-name">{user.username[0]}</span></Link>
                 </div>
 
