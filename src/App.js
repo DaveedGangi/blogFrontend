@@ -1,4 +1,4 @@
-import {Switch,Route} from "react-router-dom";
+import {Switch,Route,Redirect} from "react-router-dom";
 
 import Login from "./components/login";
 import Home from "./components/home";
@@ -20,12 +20,13 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/login" component={Login} />
-          <Route exact path="/" component={Home} />
+          <ProtectedRoute exact path="/" component={Home} />
           <ProtectedRoute exact path="/profile" component={Profile} />
           <ProtectedRoute exact path="/add-new-post" component={AddNewPost} />
           <ProtectedRoute exact path="/post/:id" component={Post} />
           <ProtectedRoute exact path="/edit-post/:id" component={EditPost} />
-          <Route component={NotFound} />
+          <Route path="/not-found" component={NotFound} />
+          <Redirect to="/not-found"/>
         </Switch>
       </main>
       <Footer/>
