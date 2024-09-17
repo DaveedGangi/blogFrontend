@@ -161,7 +161,7 @@ wrapperClass="dna-wrapper"
 
 
     render() {
-        const user = JSON.parse(localStorage.getItem("user"));
+        const user = JSON.parse(localStorage.getItem("user"))||"user";
         const { myposts } = this.state;
         return (
             <div>
