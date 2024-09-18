@@ -170,7 +170,13 @@ class Post extends Component {
             <p>Add a comment:</p>
             <form onSubmit={this.addComment} className="comment-input-container">
                 <div>
-            <textarea rows="5" cols="40" value={comment} onChange={this.commentText} className="comment-input" type="text" placeholder="Your comment" required/>
+            <textarea rows="5" cols="30" value={comment} onChange={this.commentText} className="comment-input-smaller-screen" type="text" placeholder="Your comment" required/>
+                
+            <textarea rows="5" cols="40" value={comment} onChange={this.commentText} className="comment-input-larger-screen" type="text" placeholder="Your comment" required/>
+                
+            
+                
+                
                 </div>
                 <div>
             <button className="add-comment-button-for-post" type="submit">Add Comment</button>

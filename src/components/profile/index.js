@@ -173,15 +173,18 @@ wrapperClass="dna-wrapper"
 
 
                     </div>
-                    <h3 className="profile-navbar-text">Profile Page</h3>
-
+                    
                     <div>     
                      <button className="log-out-button" type="button" onClick={this.removeJwtToken}>Log Out</button>
                     </div>
 
                      </div>
+
+                    
                
                 <div className="profile-container">
+                <h3 className="profile-navbar-text">Profile Page</h3>
+
                 <p>You are logged in as <span className="user-full-name">{user.username} </span></p>
 
                 <br/>
@@ -198,7 +201,8 @@ wrapperClass="dna-wrapper"
             }
             
 
-            <p>Thank you for visiting our blog!</p>
+            <p>"Thank you for visiting WordFlow!<br/>
+            We’re thrilled to have you here. Whether you're here to read, write, or explore, we hope you enjoy your time and find inspiration. Feel free to share your thoughts, leave a comment, or simply let your words flow. Your presence is appreciated, and we look forward to your next visit!"</p>
 
 
             </div>

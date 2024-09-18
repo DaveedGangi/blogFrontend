@@ -80,8 +80,7 @@ blogList=()=>{
     return(
         <div className="home-container">
 
-        <p>You can create new posts, edit existing posts, and delete posts.</p>
-        <p>You can also view other users' posts and leave comments.</p>
+        <p className="description-text">WordFlow is a dynamic and user-friendly platform that empowers users to effortlessly create, share, and manage their blog posts. With a sleek interface and powerful tools, writers can focus on what matters most—crafting compelling stories and ideas. Users can customize their profiles, explore a wide range of topics, interact through comments, and engage with a vibrant community of bloggers. Whether you're a casual writer or a seasoned blogger, WordFlow provides the perfect space to let your words flow.</p>
         
         <hr/>
         
@@ -172,10 +171,12 @@ wrapperClass="dna-wrapper"
         return (
             <div>
                 <div className="navbar">
-                    <h1 className="blog-heading-for-navbar">Blog</h1>
-                    <h3 className="welcome-blog-heading">Welcome to Blog App</h3>
-                    <Link className="profile" to="/profile"><span className="user-name">{user.username[0]}</span></Link>
+                    <h1 className="blog-heading-for-navbar">WordFlow</h1>
+                     <Link className="profile" to="/profile"><span className="user-name">{user.username[0]}</span></Link>
                 </div>
+
+                <h3 className="welcome-blog-heading">Welcome to WordFlow App</h3>
+                  
 
 
                 <div className="input-search-container">
