@@ -1,5 +1,5 @@
 import {Switch,Route,Redirect} from "react-router-dom";
-
+import {useLocation} from "react-router-dom"
 import Login from "./components/login";
 import Home from "./components/home";
 import Profile from "./components/profile";
@@ -13,6 +13,7 @@ import Footer from "./components/footer";
 import './App.css';
 
 function App() {
+  const location=useLocation();
   return (
     <div>
     
@@ -29,7 +30,10 @@ function App() {
           <Redirect to="/not-found"/>
         </Switch>
       </main>
-      <Footer/>
+      {
+        location.pathname !=="/login"&&<Footer/>
+      }
+     
 
       
 

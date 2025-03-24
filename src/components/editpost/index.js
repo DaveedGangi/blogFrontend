@@ -160,7 +160,7 @@ editPostForm=()=>{
                     <h1>
                         <Link className="home-link" to="/">Home</Link>
                     </h1>
-                    <p className="navbar-edit-your-post-text">Edit your post</p>
+                    
                     <Link className="profile" to="/profile"><span className="user-name">{user.username[0]}</span></Link>
                 </div>
                 

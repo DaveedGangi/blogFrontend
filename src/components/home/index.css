@@ -1,17 +1,24 @@
 
 
+
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #d5e4a0;
+    
     padding:12px;
     height:77px;
-    margin-bottom:12px;
    
+    background-color:#1E1E2F;
+    color:#F8F8F8;
     box-sizing: border-box;
 }
+.navbar:hover{
+    
+    color:#4A4A6A;
+}
+
 
 .user-name{
     height:44px;
@@ -130,6 +137,7 @@ Lottie{
     
 
 }
+
 .description-text{
     font-size:20px;
     margin-bottom:20px;
@@ -142,6 +150,9 @@ Lottie{
     padding:14px;
 
 }
+
+
+
 .loading-text{
     color:#0056b3;
     font-family: "Roboto";
@@ -166,6 +177,7 @@ Lottie{
     font-weight:600;
     color: #333;
     font-family: 'Roboto';
+    color:#F8F8F8;
 }
 @media (max-width:767px){
 
@@ -176,4 +188,56 @@ Lottie{
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

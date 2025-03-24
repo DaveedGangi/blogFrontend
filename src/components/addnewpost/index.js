@@ -54,17 +54,19 @@ class AddNewPost extends Component {
         const user = JSON.parse(localStorage.getItem("user"));
         const {title, description,image} = this.state;
         return(
-            <div className="bg-for-post-add">
+
+            <div>
+                
                 <div className="navbar">
                     <h1>
                         <Link className="home-link" to="/">Home</Link>
                     </h1>
-                    <h3 className="add-nav-bar-text">Add your favourite post</h3>
+              
                     <Link className="profile" to="/profile"><span className="user-name">{user.username[0]}</span></Link>
                 </div>
 
-
-                <div className="add-post-container">
+                <div className="bg-for-post-add">
+                        <div className="add-post-container">
                 <h1>Add New Post</h1>
                 
                 <form className="form-add-post" onSubmit={this.addPost}>
@@ -79,7 +81,10 @@ class AddNewPost extends Component {
                     </div>
                 </form>
 
+                        </div>
                 </div>
+
+
             </div>
         )
     }

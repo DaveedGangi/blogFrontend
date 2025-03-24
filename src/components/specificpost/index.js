@@ -146,9 +146,9 @@ class Post extends Component {
             <p>Time: {new Date(post.datetime).toLocaleTimeString()}</p>
         </div>
         <h1>{post.title}</h1>
-        <div>
+        
             <img className="post-image" src={post.image} alt="post-image-not-found" />
-        </div>
+           
         <p className="description">{post.description}</p>
         <p className="posted-by">Posted by: {post.username}</p>
 
@@ -279,7 +279,7 @@ wrapperClass="dna-wrapper"
                     <h1>
                         <Link className="home-link" to="/">Home</Link>
                     </h1>
-                    <h3 className="navbar-post-info-text">Post info</h3>
+                    
                     <Link className="profile" to="/profile"><span className="user-name">{user.username[0]}</span></Link>
                 </div>
 

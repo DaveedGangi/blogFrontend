@@ -6,8 +6,8 @@
     object-fit: cover;
     background-position:100%,100%;
     background-repeat: no-repeat;
- 
-   
+    object-fit: cover;
+    height:100vh;
     margin:0px;
     
     padding-bottom: 99px;
@@ -23,7 +23,7 @@
     margin-bottom:clamp(99px, 77px, 80px);
     border:1px solid rgb(111, 175, 196);
     border-radius:12px;
-    
+    margin-top:55px;
   
 
  
@@ -79,6 +79,7 @@
     .bg-for-post-edit{
         background-image:url("https://images.pexels.com/photos/17823429/pexels-photo-17823429/free-photo-of-undersea-view-of-dolphins-swimming-past-a-female-diver.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
         background-size:cover;
+        
     }
     .input{
         width:288px;
