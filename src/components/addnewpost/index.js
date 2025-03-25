@@ -41,9 +41,12 @@ class AddNewPost extends Component {
        if(response.ok){
         this.setState({title:"",description:"",image:""});
         console.log("Post added successfully");
+        
+        alert("Post added successfully");
        }
        else{
         console.error("Failed to add post");
+        alert("Failed to add post");
        }
 
 
